@@ -1,0 +1,232 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+/* 노말라이징 */
+ul{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* container */
+#container{
+    margin : 0 auto;
+    width : 1200px;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 100px;
+    background-color:beige;
+}
+
+/* logo */
+#logo{
+    float: left;
+    width: 250px;
+    height: 100px;
+    padding-left: 50px;
+    line-height: 42px;
+}
+#logo h1{
+    font-family: 'Italianno', cursive;
+    font-size: 50px;
+    color:black;
+    font-weight: 700;
+}
+
+/* nav */
+nav {
+    float:right;
+    width: 900px;
+    height: 100px;
+    /* padding-top: 40px; */
+}
+
+/* =====top메뉴===== */
+#topMenu{
+    height: 60px;
+}
+/* top메뉴 아이템 */
+#topMenu > li{
+    font-size: 20px;
+    float:left;
+    position : relative;
+}
+#topMenu > li > a > span{
+    font-size: 0.5em;
+}
+/* top메뉴 아이템 글자 */
+#topMenu > li > a {
+    display:block;
+    color:#836217;
+    font-weight: bold;
+    padding: 20px 60px;
+}
+#topMenu > li > a:hover {
+    color:#E9C060;
+}
+#topMenu > li > ul {
+    display: none;
+    position : absolute;
+    width: 160px;
+    background-color:ivory;
+}
+#topMenu > li > ul > li{
+    padding : 10px 10px 10px 10px;
+}
+#topMenu > li > ul > li > a {
+    font-size: 14px;
+    padding: 10px;
+    color : brown;
+}
+#topMenu > li:hover > ul{
+    display:block;
+    z-index:10;
+}
+/* top메뉴 내부 요소 */
+#topMenu > li > ul > li > a:hover{
+    color:wheat;
+}
+
+/* =====slideshow===== */
+#slideShow{
+    clear:both;
+    width: 100%;
+    height: 300px;
+    background-color:wheat;
+}
+/* 컨텐츠 */
+#contents{
+    width: 100%;
+    height: 300px;
+}
+/* =====탭메뉴===== */
+#tabMenu{
+    float: left;
+    width: 600px;
+    height: 100%;
+    background-color: #FFFFF6;
+}
+/* 탭메뉴, 라디오 버튼 감추기 */
+#tabMenu input[type="radio"] {
+    display:none; 
+}
+/* 탭메뉴, 라벨 가로화 및 선택시 변경 */
+#tabMenu label {
+    display: inline-block;
+    margin: 0 0;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid transparent;
+    background-color: #FCFBD7;
+    color:#877608;
+}
+#tabMenu label:hover {
+    color:#E9C060;
+    cursor: pointer;
+}
+#tabMenu input:checked + label{
+    color:brown;
+    border: 2px solid #E9C060;
+    background-color: #FFFEF3;
+}
+
+/* 탭메뉴, 내부 내용 요소 */
+.tabContent {
+    display: none;
+    border-top: 1px solid brown;
+}
+#notice ul {
+    margin-left: 30px;
+}
+#board ul{
+    margin-left : 30px;
+}
+/* 공지사항 */
+#notice ul li {
+    font-size: 16px;
+    line-height: 2.5;
+}
+/* 자유게시판 */
+#board ul li {
+    font-size: 16px;
+    line-height: 2.5;
+}
+/* 갤러리 */
+#gallery ul li{
+    display : inline-block;
+}
+/* 클릭시 화면 띄우기 */
+#tab1:checked ~ #notice,
+#tab2:checked ~ #gallery,
+#tab3:checked ~ #board{
+    display:block;
+}
+.tabContent h2 {
+    display: none;
+}
+
+/* =====링크===== */
+#links{
+    float:right;
+    width:600px;
+    height: 100%;
+    background-color:#FFD0AB;
+}
+/* 넘치는 항목 감추기 */
+#links ul{
+    overflow: hidden; 
+}
+/* 링크 내부 요소 */
+#links ul li{
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+/* 아이콘 및 글자 설정 */
+#links ul li a span{
+    display: block;
+    width: 150px;
+    height: 150px;
+    border: 1px solid chocolate;
+    border-radius: 100%;
+    line-height: 150px;
+}
+/* 사진올리기 */
+#quick-icon1 {
+    background-image: url(../images/icon-1.jpg);
+}
+#quick-icon2{
+    background-image: url(../images/icon-2.jpg);
+}
+#quick-icon3{
+    background-image: url(../images/icon-3.jpg);
+}
+
+/* =====footer===== */
+footer{
+    width:100%;
+    height:100px;
+    background-color:#E1AB75;
+    border-top: 2px solid chocolate;
+}
+/* bottomMenu */
+#bottomMenu {
+    width: 100%;
+    height: 20px;
+}
+#bottomMenu ul li {
+    float:left;
+    padding: 5px 20px;
+    border-right: 1px solid chocolate;
+}
+/* sns */
+#sns ul li {
+    float: right;
+    padding: 5px;
+}
