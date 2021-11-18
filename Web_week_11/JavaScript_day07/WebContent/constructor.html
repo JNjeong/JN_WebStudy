@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		function User(){};
+		
+		let p = new User();
+		p.name = "Junhong Jeong";
+		p.introduce = function(){
+			return "My Name is " + this.name;
+		}
+		
+		document.write(p.introduce());
+	</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		function fnc(){
+			if(window === this){
+				document.write("window===this");
+			}
+		}
+		//이 경우 this는 전역객체인 window와 같다.
+		fnc();
+	</script>
+</body>
+</html>

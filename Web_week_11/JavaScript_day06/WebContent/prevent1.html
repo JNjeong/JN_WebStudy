@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<p>
+		<label>prevent event on</label>
+		<input id="prevent" type="checkbox"/>
+	</p>
+	<p>
+		<a href="https://www.naver.com" 
+		onclick="if(document.getElementById('prevent').checked) return false;">naver</a>
+	</p>
+	<p>
+		<form action="https://www.naver.com" 
+		onsubmit="if(document.getElementById('prevent').checked) return false;">
+			<input type="submit"/>
+		</form>
+	</p>
+	
+	<script>
+	
+	</script>
+</body>
+</html>

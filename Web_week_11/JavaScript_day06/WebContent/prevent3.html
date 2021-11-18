@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<p>
+		<label>prevent event on</label>
+		<input id="prevent" type="checkbox"/>
+	</p>
+	<p>
+		<a href="https://www.naver.com">naver</a>
+	</p>
+	<p>
+		<form action="https://www.naver.com">
+			<input type="submit"/>
+		</form>
+	</p>
+	
+	<script>
+		<!-- 
+		document.querySelector("a").addEventListener("click", function(event){
+			if(document.getElementById("prevent").checked){
+				event.preventDefault();
+			}
+		});
+		
+		document.querySelector("form").addEventListener("submit", function(event){
+			if(document.getElementById("prevent").checked){
+				event.preventDefault();
+			}
+		});
+		-->
+		var idCheck = function idCheck(e, checkid){
+		   	if(document.getElementById(checkid).checked){
+	     		e.preventDefault();
+	         }
+		};
+	
+	    function mainfn(tag,action, checkid) {
+	    document.querySelector(tag).addEventListener(action, idCheck(checkid));
+	    };
+	
+		mainfn('a','click','prevent');
+	    mainfn('form','click','prevent');
+	</script>
+</body>
+</html>

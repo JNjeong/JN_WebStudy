@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		function Person(name){
+			this.name = name;
+		}
+		
+		Person.prototype.introduce = function(){
+			return "My name is " + this.name;
+		}
+		
+		function Programmer(name){
+			this.name = name;
+		}
+		
+		//상속
+		Programmer.prototype = new Person();
+		
+		let p1 = new Programmer("jjn");
+		document.write(p1.introduce());
+		
+	</script>
+</body>
+</html>

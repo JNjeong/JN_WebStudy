@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="result.html" id="nametag">
+		<label for="name">name</label>
+		<input id="name" type="name">
+		<input type="submit">
+		
+	</form>
+	
+	<script>
+		let t = document.getElementById("nametag");
+		t.addEventListener('submit', function(event){
+			if(document.getElementById("name").value.length ===0){
+				alert("이름을 입력해주세요 ^^7");
+				event.preventDefault();
+			}
+		});
+	</script>
+</body>
+</html>
