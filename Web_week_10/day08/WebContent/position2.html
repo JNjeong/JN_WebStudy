@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<style>
+	body{
+		padding-top: 30px;
+	}
+	#parent, #other{
+		border: 5px solid tomato;
+	}
+	#large{
+		height: 10000px;
+		background-color:tomato;
+	}
+	/*
+		fixed : scroll과 무관한 영역. 즉 고정된 상태
+	*/
+	/* 아래에 고정하는 경우
+	#me{
+		background-color:black;
+		color:white;
+		//position:relative;
+		//position : absolute;
+		position: fixed;
+		left : 0px;
+		bottom:0px;
+		width:100%;
+		text-align: center;
+	}
+	*/
+	/*위에 고정하는 경우*/
+	#me{
+		background-color:black;
+		color:white;
+		position: fixed;
+		left:0px;
+		top:0px;
+		width:100%;
+		text-align: center;
+	}
+
+		
+</style>
+<body>
+	<!-- 
+		엘리먼트의 위치를 지정하는 4가지 방법
+		1. static
+		2. relative
+		3. absolute
+		4. fixed
+	 -->
+	<div id="other">other</div>
+
+	<div id="parent">parent
+		<div id="me">me</div>
+	</div>
+	<div id="large">large</div>
+	
+</body>
+</html>

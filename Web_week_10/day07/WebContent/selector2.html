@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<style>
+	/* ul 밑에 있는 li 태그 */
+	ul li{
+		color : red;
+	}
+	/* lecture밑에 있는 li 태그 */
+	#Lecture>li {
+		border : 1px solid aqua;
+		color : blue;
+	}
+	/* ul, ol 모두 사용 */
+	ul, ol {
+		background-color : powderblue;
+	}
+</style>
+<body>
+	<ul>
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>JavaScript</li>
+	</ul>
+	<ol>
+		<li>HTML</li>
+		<li>CSS
+			<ol id="Lecture">
+				<li>selector</li>
+				<li>declaration</li>
+			</ol>
+		</li>
+		<li>JavaScript</li>
+	</ol>
+</body>
+</html>

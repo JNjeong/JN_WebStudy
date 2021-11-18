@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		var vscope = 'global';
+		function fscope(){
+			alert(vscope);
+		}
+		fscope();
+		function fscope2(){
+			alert(vscope);
+		}
+		fscope2();
+
+	</script>
+</body>
+</html>

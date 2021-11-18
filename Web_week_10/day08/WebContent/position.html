@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<style>
+	html{
+		border : 1px solid red;
+	}
+	/*
+	div{
+		border: 5px solid tomato;
+		margin: 10px;
+	}
+	*/
+	#parent, #other, #grand{
+		border: 5px solid tomato;
+	}
+	#grand{
+		position: relative;
+	}
+	#me{
+		background-color:black;
+		color:white;
+		/*position:relative;*/
+		position : absolute;
+		left : 0px;
+		top:0px;
+	}
+</style>
+<body>
+	<!-- 
+		엘리먼트의 위치를 지정하는 4가지 방법
+		1. static
+		2. relative
+		3. absolute
+		4. fixed
+	 -->
+	<div id="other">other</div>
+	<div id="grand">grand
+		<div id="parent">parent
+			<div id="me">me</div>
+		</div>
+	</div>
+	
+</body>
+</html>

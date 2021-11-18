@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<style>
+	*{
+		box-sizing : border-box;
+	}
+	div{
+		margin:10px;
+		width:150px;
+		/*box-sizing : border-box;*/
+	}
+	/*
+		여기에 적용되는 width는 엘리먼트 속성에 대한 width만 포함된다.
+		border값이 포함될 때는 그 너비를 예측하기 어렵다.
+	*/
+	#small{border:10px solid black;}
+	#large{border:30px solid black;}
+	
+</style>
+<body>
+	<div id="small">Hello</div>
+	<div id="large">Hello</div>
+</body>
+</html>

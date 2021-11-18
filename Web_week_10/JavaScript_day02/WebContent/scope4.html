@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		var vscope = 'global';
+		//var vscope = 'temp';
+		function fscope(){
+			vscope = 'local';
+			alert('함수안 호출'+vscope);
+		}
+		alert('함수밖 호출1' + vscope);
+		fscope();
+		alert('함수밖 호출2'+vscope);
+	</script>
+</body>
+</html>
